@@ -1,5 +1,5 @@
-import entriesDeepL from "../.internal/entriesDeepL.js";
-import objectDeep from "../.internal/objectDeep.js";
+import entriesDeepL from "../internal/entriesDeepL.js";
+import objectDeep from "../internal/objectDeep.js";
 import flatL from "../Lazy/flatL.js";
 import mapL from "../Lazy/mapL.js";
 import curry from "./curry.js";

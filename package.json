@@ -7,7 +7,7 @@
   "type": "module",
   "sideEffects": false,
   "scripts": {
-    "transpile:internal": "BABEL_ENV=cjs babel .internal --out-dir .internal",
+    "transpile:internal": "BABEL_ENV=cjs babel internal --out-dir internal",
     "transpile:strict": "BABEL_ENV=cjs babel Strict --out-dir Strict",
     "transpile:lazy": "BABEL_ENV=cjs babel Lazy --out-dir Lazy",
     "transpile:concurrency": "BABEL_ENV=cjs babel Concurrency --out-dir Concurrency",
@@ -20,7 +20,7 @@
     "test": "mocha 'test/spec.js' --require esm"
   },
   "files": [
-    ".internal",
+    "internal",
     "Concurrency",
     "Lazy",
     "Strict",

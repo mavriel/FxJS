@@ -405,7 +405,7 @@ function toIter(iterable) {
 // CONCATENATED MODULE: ./Strict/nop.js
 const nop = Symbol.for('nop');
 /* harmony default export */ var Strict_nop = (nop);
-// CONCATENATED MODULE: ./.internal/go2.js
+// CONCATENATED MODULE: ./internal/go2.js
 
 
 function go2(acc, a, f){
@@ -464,7 +464,7 @@ function reduce(f, acc, iter) {
     return acc;
   });
 }
-// CONCATENATED MODULE: ./.internal/go1Sync.js
+// CONCATENATED MODULE: ./internal/go1Sync.js
 /* harmony default export */ var go1Sync = ((a, f) => f(a));
 // CONCATENATED MODULE: ./Strict/go.js
 
@@ -606,7 +606,7 @@ function* entriesL(obj) {
 /* harmony default export */ var Lazy_mapEntriesL = (curry(function* mapEntriesL(f, iter) {
   for (const [k, a] of toIter(iter)) yield go1(go1(a, f), b => [k, b]);
 }));
-// CONCATENATED MODULE: ./.internal/baseApplyEach.js
+// CONCATENATED MODULE: ./internal/baseApplyEach.js
 
 
 
@@ -779,7 +779,7 @@ function curry3(f) {
 /* harmony default export */ var call = (curry(function call(f, ...args) {
   return f(...args);
 }));
-// CONCATENATED MODULE: ./.internal/baseCallEach.js
+// CONCATENATED MODULE: ./internal/baseCallEach.js
 
 
 
@@ -894,9 +894,9 @@ function isFunction(a) {
 const isObject = a => a !== null && typeof a === 'object' && a.constructor === Object;
 /* harmony default export */ var Strict_isObject = (isObject);
 
-// CONCATENATED MODULE: ./.internal/clonedIterableSymbol.js
+// CONCATENATED MODULE: ./internal/clonedIterableSymbol.js
 /* harmony default export */ var clonedIterableSymbol = (Symbol('clonedIterable'));
-// CONCATENATED MODULE: ./.internal/entriesDeepL.js
+// CONCATENATED MODULE: ./internal/entriesDeepL.js
 
 
 
@@ -933,7 +933,7 @@ function entriesDeepL(obj) {
     )
   )
 }
-// CONCATENATED MODULE: ./.internal/objectDeep.js
+// CONCATENATED MODULE: ./internal/objectDeep.js
 
 
 
@@ -1079,7 +1079,7 @@ function deepFlatL(iter) {
 function deepFlat(iter) {
   return takeAll(deepFlatL(iter));
 }
-// CONCATENATED MODULE: ./.internal/baseExtend.js
+// CONCATENATED MODULE: ./internal/baseExtend.js
 
 
 
@@ -1683,7 +1683,7 @@ function uniqueL(obj) {
 /* harmony default export */ var Strict_intersectionWith = (curry2(function intersectionWith(f, iter1, iter2) {
   return takeAll(Lazy_intersectionWithL(f, iter1, iter2));
 }));
-// CONCATENATED MODULE: ./.internal/reverse1.js
+// CONCATENATED MODULE: ./internal/reverse1.js
 
 /* harmony default export */ var reverse1 = (([a, b]) => go1(a, _a => go1(b , _b => [_b, _a])));
 // CONCATENATED MODULE: ./Strict/invert.js
@@ -2190,7 +2190,7 @@ function reduceRight(f, acc, iter) {
     Strict_apply(sliceL),
     takeAll);
 }));
-// CONCATENATED MODULE: ./.internal/baseSortBy.js
+// CONCATENATED MODULE: ./internal/baseSortBy.js
 
 
 
@@ -2837,7 +2837,7 @@ const eachL = curry((f, iter) => Lazy_mapL(tap(f), iter));
 function intervalL(time) {
   return Lazy_mapL(delay(time), rangeL(Infinity));
 }
-// CONCATENATED MODULE: ./.internal/catchNoopIter.js
+// CONCATENATED MODULE: ./internal/catchNoopIter.js
 /* harmony default export */ var catchNoopIter = (arr => (
   arr.forEach(a => a.value instanceof Promise && a.value.catch(function() {})),
   arr));
@@ -2941,7 +2941,7 @@ function limitLoadL(n, iter) {
 
 
 
-// CONCATENATED MODULE: ./.internal/catchNoop.js
+// CONCATENATED MODULE: ./internal/catchNoop.js
 /* harmony default export */ var catchNoop = (arr => (
   arr.forEach(a => a instanceof Promise && a.catch(function() {})),
   arr));

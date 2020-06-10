@@ -6343,7 +6343,7 @@ function toIter(iterable) {
 
 var nop = Symbol.for('nop');
 /* harmony default export */ var Strict_nop = (nop);
-// CONCATENATED MODULE: ./.internal/go2.js
+// CONCATENATED MODULE: ./internal/go2.js
 
 
 
@@ -6461,7 +6461,7 @@ function reduce(f, acc, iter) {
     return acc;
   });
 }
-// CONCATENATED MODULE: ./.internal/go1Sync.js
+// CONCATENATED MODULE: ./internal/go1Sync.js
 /* harmony default export */ var go1Sync = (function (a, f) {
   return f(a);
 });
@@ -6952,7 +6952,7 @@ function mapEntriesL_arrayLikeToArray(arr, len) { if (len == null || len > arr.l
     }
   }, mapEntriesL, null, [[1, 10, 13, 16]]);
 })));
-// CONCATENATED MODULE: ./.internal/baseApplyEach.js
+// CONCATENATED MODULE: ./internal/baseApplyEach.js
 
 
 
@@ -7408,7 +7408,7 @@ function curry3(f) {
 
   return f.apply(void 0, args);
 }));
-// CONCATENATED MODULE: ./.internal/baseCallEach.js
+// CONCATENATED MODULE: ./internal/baseCallEach.js
 
 
 
@@ -7759,12 +7759,12 @@ var isObject = function isObject(a) {
 };
 
 /* harmony default export */ var Strict_isObject = (isObject);
-// CONCATENATED MODULE: ./.internal/clonedIterableSymbol.js
+// CONCATENATED MODULE: ./internal/clonedIterableSymbol.js
 
 
 
 /* harmony default export */ var clonedIterableSymbol = (Symbol('clonedIterable'));
-// CONCATENATED MODULE: ./.internal/entriesDeepL.js
+// CONCATENATED MODULE: ./internal/entriesDeepL.js
 
 
 
@@ -7809,7 +7809,7 @@ function entriesDeepL(obj) {
     return true;
   }, identity])));
 }
-// CONCATENATED MODULE: ./.internal/objectDeep.js
+// CONCATENATED MODULE: ./internal/objectDeep.js
 
 
 
@@ -8046,7 +8046,7 @@ function deepFlatL(iter) {
 function deepFlat(iter) {
   return takeAll(deepFlatL(iter));
 }
-// CONCATENATED MODULE: ./.internal/baseExtend.js
+// CONCATENATED MODULE: ./internal/baseExtend.js
 
 
 
@@ -9425,7 +9425,7 @@ function uniqueL(obj) {
 /* harmony default export */ var Strict_intersectionWith = (curry2(function intersectionWith(f, iter1, iter2) {
   return takeAll(Lazy_intersectionWithL(f, iter1, iter2));
 }));
-// CONCATENATED MODULE: ./.internal/reverse1.js
+// CONCATENATED MODULE: ./internal/reverse1.js
 
 
 
@@ -10291,7 +10291,7 @@ function sliceL_arrayLikeToArray(arr, len) { if (len == null || len > arr.length
     return i < 0 ? i + iter.length : i;
   }), Strict_append(iter), Strict_apply(sliceL), takeAll);
 }));
-// CONCATENATED MODULE: ./.internal/baseSortBy.js
+// CONCATENATED MODULE: ./internal/baseSortBy.js
 
 
 
@@ -11203,7 +11203,7 @@ var eachL = curry(function (f, iter) {
 function intervalL(time) {
   return Lazy_mapL(delay(time), rangeL(Infinity));
 }
-// CONCATENATED MODULE: ./.internal/catchNoopIter.js
+// CONCATENATED MODULE: ./internal/catchNoopIter.js
 
 
 
@@ -11428,7 +11428,7 @@ function takeL_arrayLikeToArray(arr, len) { if (len == null || len > arr.length)
 
 
 
-// CONCATENATED MODULE: ./.internal/catchNoop.js
+// CONCATENATED MODULE: ./internal/catchNoop.js
 
 
 
